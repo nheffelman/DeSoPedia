@@ -6,6 +6,8 @@ class DeSoPedia:
     def index(self):
         return open(os.path.join('views', 'index.html'))
 
+    
+
 if __name__ == '__main__':
     cherrypy.quickstart(DeSoPedia(), '/', {
         '/': {
